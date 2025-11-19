@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21 Semántica</title>
+    <link rel="stylesheet" href="CSS/21 semántica.css">
+</head>
+<body>
+
+<header>
+    <h1>Mi sitio web</h1>
+    <nav>
+        <ul>
+            <li><a href="/index">Inicio</a></li>
+            <li><a href="/about">Acerca de</a></li>
+            <li><a href="/contact">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Contenido principal</h2>
+        <p>Este es el contenido principal de la página.</p>
+    </section>
+
+    <section>
+        <h2>Sección de servicios</h2>
+        <p>Descripción de servicios en una sección.</p>
+    </section>
+
+    <section>
+        <h2>Artículos</h2>
+
+        <article id="articulo1">
+            <h3>Título del artículo/noticia 1</h3>
+            <p>Contenido del artículo 1.</p>
+            <p class="fecha">
+                Publicado el <time datetime="2025-11-01">1 de noviembre de 2025</time>
+            </p>
+        </article>
+
+        <article id="articulo2">
+            <h3>Título del artículo/noticia 2</h3>
+            <p>Contenido del artículo 2.</p>
+            <p class="fecha">
+                Publicado el <time datetime="2025-11-04">4 de noviembre de 2025</time>
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Imagen ilustrativa</h2>
+        <figure>
+            <img src="Imageneshtml/Playa.jpg" alt="Imagen de una playa" style="width: 25%;">
+            <figcaption>Imagen de una playa</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <!-- Detalles -->
+        <details>
+            <summary>Ver más detalles sobre el producto</summary>
+            <p>Este producto está hecho con materiales ecológicos y tiene una garantía de 2 años.</p>
+        </details>
+    </section>
+
+    <aside>
+        <h3>Artículos relacionados</h3>
+        <ul>
+            <li><a href="#articulo1">Artículo 1</a></li>
+            <li><a href="#articulo2">Artículo 2</a></li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>© 2023 Mi sitio web. Todos los derechos reservados.</p>
+    <a href="privacy.html">Política de privacidad</a>
+    <p id="demo"></p>
+</footer>
+
+<script src="JS/21 semántica.js" defer></script> atributo defer le dice al navegador que espere a ejecutar el script hasta que el HTML esté completamente cargado>
+</body>
+</html>

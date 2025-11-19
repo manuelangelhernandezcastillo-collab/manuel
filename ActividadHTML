@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <title>Actividad 2.1 HTML - [Manuel]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Estilo general para tipografía y layout básico */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+      color: #222;
+    }
+    h1, h2 {
+      margin: 16px 0 8px;
+    }
+    p {
+      margin: 8px 0;
+    }
+    /* Línea horizontal y líneas de separación */
+    hr {
+      border: none;
+      border-top: 2px solid #888;
+      margin: 16px 0;
+      width: 100%;
+    }
+    .linea-50 {
+      width: 50%;
+      border-top: 2px solid #888;
+      height: 0;
+      margin: 12px 0;
+    }
+    /* Listas */
+    ul, ol {
+      margin: 8px 0 12px 24px;
+    }
+    ul ul {
+      margin-left: 20px;
+      list-style-type: circle;
+    }
+    /* Lista ordenada estilo A */
+    ol.tipoA {
+      list-style-type: upper-alpha;
+    }
+    /* Enlaces */
+    a {
+      color: #0645AD;
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+    /* Imagen al 25% del contenedor */
+    .imagen-25 {
+      width: 25%;
+      height: auto;
+      display: block;
+      margin: 8px 0;
+    }
+    /* Tabla con estilo del ejemplo de clase: bordes, zebra, caption */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+    }
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      padding: 8px 0;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: center;
+    }
+    thead th {
+      background: #f0f0f0;
+    }
+    tbody tr:nth-child(even) {
+      background: #fafafa;
+    }
+    /* Bloque con div y span */
+    .bloque {
+      padding: 20px;
+      background: #e0e0e0; /* gris */
+      color: #0a7d0a;      /* verde */
+      border-radius: 6px;
+      margin: 12px 0 20px;
+    }
+    .bloque span {
+      color: #c50000;      /* rojo */
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Actividad 2.1 HTML. [Manuel]</h1>
+
+  <p>En esta actividad debes reproducir la web que consta de varios párrafos, una lista desordenada anidada y una lista ordenada, enlaces, una imagen, una tabla y un div.</p>
+
+  <p>Este es un párrafo con un salto de línea aquí:<br>
+  y aquí continúa en otra línea.</p>
+
+  <p>Párrafo con <span>span</span> y salto de línea</p>
+
+  <div class="linea-50" title="Línea al 50%"></div>
+
+  <h2>Lista de tareas del día</h2>
+  <ul>
+    <li>Desayunar</li>
+    <li>Ir al gimnasio
+      <ul>
+        <li>Pesas</li>
+      </ul>
+    </li>
+    <li>Cardio</li>
+    <li>Hacer las tareas de Lenguaje de Marcas</li>
+    <li>Prepararme para ir a clase</li>
+  </ul>
+
+  <h2>Pasos para conectarse a internet</h2>
+  <ol class="tipoA">
+    <li>Encender el router</li>
+    <li>Abrir el navegador</li>
+    <li>Buscar información</li>
+  </ol>
+
+  <h2>Enlaces útiles</h2>
+  <p>
+    Visitar la web del IES El Rincón:
+    <a href="https://www3.gobiernodecanarias.org/medusa/edublog/ieselrincon/" target="_blank" rel="noopener">Abrir en nueva pestaña</a>
+    <br>
+    Ir a la página de contacto:
+    <a href="contacto.html">contacto.html</a>
+  </p>
+
+  <h2>Mapa de las Islas Canarias</h2>
+  <p><strong>ISLAS CANARIAS</strong><br>OCÉANO ATLÁNTICO</p>
+  <img src="Imageneshtml/mapa_canarias" alt="Mapa de las Islas Canarias" class="imagen-25">
+
+  <hr>
+
+  <h2>Tabla de horario</h2>
+  <table>
+    <caption>Horario semanal</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>15:00 - 16:50</td>
+        <td>PNI</td>
+        <td>IDP</td>
+        <td>ITK</td>
+        <td>LND</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2">16:50 - 17:45</td>
+        <td>FUW</td>
+        <td>Inglés</td>
+        <td>DIG</td>
+        <td>Inglés</td>
+        <td>FUW</td>
+      </tr>
+      <tr>
+        <td colspan="2">17:45 - 18:00</td>
+        <td colspan="5">Recreo</td>
+      </tr>
+      <tr>
+        <td colspan="2">18:00 - 18:55</td>
+        <td></td>
+        <td colspan="2"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2">18:55 - 19:50</td>
+        <td></td>
+        <td colspan="2">Taller</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2">19:50 - 20:45</td>
+        <td></td>
+        <td colspan="4"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Tabla de 6 columnas y 7 filas con rowspan y colspan</h2>
+  <table>
+    <caption>Planificación semanal</caption>
+    <thead>
+      <tr>
+        <th>Bloque</th>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Mañana</td>
+        <td>08:00 - 09:00</td>
+        <td>Mat</td>
+        <td>His</td>
+        <td>Leng</td>
+        <td>Ing</td>
+        <td>EF</td>
+      </tr>
+      <tr>
+        <td>09:00 - 10:00</td>
+        <td colspan="2">Proyecto</td>
+        <td>Leng</td>
+        <td>Ing</td>
+        <td>EF</td>
+      </tr>
+      <tr>
+        <td colspan="2">10:00 - 10:30</td>
+        <td colspan="5">Recreo</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Mediodía</td>
+        <td>10:30 - 11:30</td>
+        <td>BD</td>
+        <td>Prog</td>
+        <td>SI</td>
+        <td colspan="2">Taller</td>
+      </tr>
+      <tr>
+        <td>11:30 - 12:30</td>
+        <td>BD</td>
+        <td>Prog</td>
+        <td>SI</td>
+        <td>EDI</td>
+        <td>EDI</td>
+      </tr>
+      <tr>
+        <td colspan="2">12:30 - 13:00</td>
+        <td>Libre</td>
+        <td colspan="2">Libre</td>
+        <td>Libre</td>
+        <td>Libre</td>
+      </tr>
+      <tr>
+        <td>Tarde</td>
+        <td>13:00 - 14:00</td>
+        <td colspan="3">Trabajo en equipo</td>
+        <td colspan="2">Prácticas</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Bloque con div y span</h2>
+  <div class="bloque">
+    <p>Este es un párrafo dentro de un div, y aquí hay un <span>span</span> que cambia el color de una palabra.</p>
+  </div>
+
+  <div class="linea-50" title="Línea"></div>
+
+  <h1>Fin de la actividad</h1>
+
+</body>
+</html>

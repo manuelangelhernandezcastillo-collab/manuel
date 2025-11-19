@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de ejemplo</title>
+  <style>
+    body { font-family: "Times New Roman", Georgia, serif; background-color: #fff; margin: 40px; }
+    form { max-width: 450px; margin: auto; }
+    h2 { text-align: center; font-weight: bold; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, select {
+      width: 100%; padding: 6px; margin-top: 5px;
+      border: 1px solid #000; border-radius: 2px;
+      font-family: "Times New Roman", Georgia, serif;
+    }
+    .grupo { margin-top: 15px; }
+    .grupo label { font-weight: normal; display: block; margin-top: 5px; }
+    fieldset {
+      background-color: rgb(247, 247, 247);
+      border: 1px solid #999;
+      margin-top: 15px;
+      padding: 10px;
+    }
+    legend { font-weight: bold; }
+    button {
+      margin-top: 15px; padding: 8px 12px;
+      border: 1px solid #000; background: #f0f0f0;
+      cursor: pointer; font-family: "Times New Roman", Georgia, serif;
+    }
+    button:hover { background: #ddd; }
+  </style>
+</head>
+<body>
+  <form action="https://webhook.site/1e26d38f-40cb-4fb1-939b-0664224d3aa3" method="post" enctype="multipart/form-data">
+    <h2>Formulario de ejemplo</h2>
+
+    <!-- Nombre -->
+    <label for="usuario-nombre">Nombre de usuario</label>
+    <input type="text" id="usuario-nombre" name="usuario_nombre" required>
+
+    <!-- Contraseña -->
+    <label for="usuario-password">Contraseña</label>
+    <input type="password" id="usuario-password" name="usuario_password" required>
+
+    <!-- Correo electrónico -->
+    <label for="usuario-email">Correo electrónico</label>
+    <input type="email" id="usuario-email" name="usuario_email" required>
+
+    <!-- Bloque verde unificado -->
+    <fieldset style="background-color: rgb(104, 212, 94);">
+      <legend>Fecha y envío de archivos</legend>
+
+      <label for="envio-fecha">Fecha</label>
+      <input type="date" id="envio-fecha" name="envio_fecha">
+
+      <label for="envio-hora">Hora</label>
+      <input type="time" id="envio-hora" name="envio_hora">
+
+      <label for="envio-fichero">Adjunta un fichero</label>
+      <input type="file" id="envio-fichero" name="envio_fichero">
+    </fieldset>
+
+    <!-- Selección múltiple -->
+    <fieldset style="background-color: rgb(218, 156, 209);">
+      <legend>Selección múltiple</legend>
+
+      <strong>Frutas (checkbox):</strong><br>
+      <input type="checkbox" id="fruta-platano" name="frutas[]" value="platano">
+      <label for="fruta-platano">Plátanos</label><br>
+
+      <input type="checkbox" id="fruta-manzana" name="frutas[]" value="manzana">
+      <label for="fruta-manzana">Manzanas</label><br>
+
+      <input type="checkbox" id="fruta-naranja" name="frutas[]" value="naranja">
+      <label for="fruta-naranja">Naranjas</label><br>
+
+      <strong>Verduras (radio):</strong><br>
+      <input type="radio" id="verdura-tomate" name="verdura" value="tomate">
+      <label for="verdura-tomate">Tomate</label><br>
+
+      <input type="radio" id="verdura-aguacate" name="verdura" value="aguacate">
+      <label for="verdura-aguacate">Aguacate</label><br>
+
+      <input type="radio" id="verdura-zanahoria" name="verdura" value="zanahoria">
+      <label for="verdura-zanahoria">Zanahoria</label><br>
+
+      <label for="proteina-tipo">Selecciona</label>
+      <select name="proteina_tipo" id="proteina-tipo">
+        <option value="ternera">Ternera</option>
+        <option value="pollo">Pollo</option>
+        <option value="pescado">Pescado</option>
+      </select>
+    </fieldset>
+
+    <!-- Botones -->
+    <div class="grupo">
+      <button type="submit" id="btn-enviar" name="accion" value="enviar" title="Enviar el formulario">Enviar datos</button>
+      <button type="reset" id="btn-limpiar" name="accion" value="limpiar" title="Limpiar todos los campos">Limpiar datos</button>
+    </div>
+  </form>
+</body>
+</html>
