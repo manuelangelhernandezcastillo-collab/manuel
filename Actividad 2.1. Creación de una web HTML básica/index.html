@@ -103,7 +103,7 @@
   <p>Este es un párrafo con un salto de línea aquí:<br>
   y aquí continúa en otra línea.</p>
 
-  <p>Párrafo con <span>span</span> y salto de línea</p>
+  
 
   <div class="linea-50" title="Línea al 50%"></div>
 
@@ -130,7 +130,7 @@
   <h2>Enlaces útiles</h2>
   <p>
     Visitar la web del IES El Rincón:
-    <a href="https://www3.gobiernodecanarias.org/medusa/edublog/ieselrincon/" target="_blank" rel="noopener">Abrir en nueva pestaña</a>
+    <a href="https://ieselrincon.es/" target="_blank" rel="noopener">Abrir en nueva pestaña</a>
     <br>
     Ir a la página de contacto:
     <a href="contacto.html">contacto.html</a>
@@ -138,134 +138,74 @@
 
   <h2>Mapa de las Islas Canarias</h2>
   <p><strong>ISLAS CANARIAS</strong><br>OCÉANO ATLÁNTICO</p>
-  <img src="Imageneshtml/mapa_canarias" alt="Mapa de las Islas Canarias" class="imagen-25">
+  <img src="mapa_canarias.png" alt="Mapa de las Islas Canarias" class="imagen-25">
 
   <hr>
 
-  <h2>Tabla de horario</h2>
-  <table>
-    <caption>Horario semanal</caption>
-    <thead>
-      <tr>
-        <th></th>
-        <th>Hora</th>
-        <th>Lunes</th>
-        <th>Martes</th>
-        <th>Miércoles</th>
-        <th>Jueves</th>
-        <th>Viernes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td>15:00 - 16:50</td>
-        <td>PNI</td>
-        <td>IDP</td>
-        <td>ITK</td>
-        <td>LND</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td colspan="2">16:50 - 17:45</td>
-        <td>FUW</td>
-        <td>Inglés</td>
-        <td>DIG</td>
-        <td>Inglés</td>
-        <td>FUW</td>
-      </tr>
-      <tr>
-        <td colspan="2">17:45 - 18:00</td>
-        <td colspan="5">Recreo</td>
-      </tr>
-      <tr>
-        <td colspan="2">18:00 - 18:55</td>
-        <td></td>
-        <td colspan="2"></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td colspan="2">18:55 - 19:50</td>
-        <td></td>
-        <td colspan="2">Taller</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td colspan="2">19:50 - 20:45</td>
-        <td></td>
-        <td colspan="4"></td>
-      </tr>
-    </tbody>
-  </table>
+  <table border="1" cellspacing="0" cellpadding="8">
+  <caption><strong>Horario semanal</strong></caption>
+  <thead>
+    <tr>
+      <th>Hora</th>
+      <th>Lunes</th>
+      <th>Martes</th>
+      <th>Miércoles</th>
+      <th>Jueves</th>
+      <th>Viernes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15:00 - 16:50</td>
+      <td>PNI</td>
+      <td>IDP</td>
+      <td>ITK</td>
+      <td>LND</td>
+      <td>FUW</td>
+    </tr>
+    <tr>
+      <td>16:50 - 17:45</td>
+      <td>FUW</td>
+      <td>Inglés</td>
+      <td>DIG</td>
+      <td>Inglés</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17:45 - 18:00</td>
+      <td></td>
+      <td></td>
+      <td>Recreo</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18:00 - 18:55</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18:55 - 19:50</td>
+      <td></td>
+      <td></td>
+      <td>Taller</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19:50 - 20:45</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-  <h2>Tabla de 6 columnas y 7 filas con rowspan y colspan</h2>
-  <table>
-    <caption>Planificación semanal</caption>
-    <thead>
-      <tr>
-        <th>Bloque</th>
-        <th>Hora</th>
-        <th>Lunes</th>
-        <th>Martes</th>
-        <th>Miércoles</th>
-        <th>Jueves</th>
-        <th>Viernes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td rowspan="2">Mañana</td>
-        <td>08:00 - 09:00</td>
-        <td>Mat</td>
-        <td>His</td>
-        <td>Leng</td>
-        <td>Ing</td>
-        <td>EF</td>
-      </tr>
-      <tr>
-        <td>09:00 - 10:00</td>
-        <td colspan="2">Proyecto</td>
-        <td>Leng</td>
-        <td>Ing</td>
-        <td>EF</td>
-      </tr>
-      <tr>
-        <td colspan="2">10:00 - 10:30</td>
-        <td colspan="5">Recreo</td>
-      </tr>
-      <tr>
-        <td rowspan="2">Mediodía</td>
-        <td>10:30 - 11:30</td>
-        <td>BD</td>
-        <td>Prog</td>
-        <td>SI</td>
-        <td colspan="2">Taller</td>
-      </tr>
-      <tr>
-        <td>11:30 - 12:30</td>
-        <td>BD</td>
-        <td>Prog</td>
-        <td>SI</td>
-        <td>EDI</td>
-        <td>EDI</td>
-      </tr>
-      <tr>
-        <td colspan="2">12:30 - 13:00</td>
-        <td>Libre</td>
-        <td colspan="2">Libre</td>
-        <td>Libre</td>
-        <td>Libre</td>
-      </tr>
-      <tr>
-        <td>Tarde</td>
-        <td>13:00 - 14:00</td>
-        <td colspan="3">Trabajo en equipo</td>
-        <td colspan="2">Prácticas</td>
-      </tr>
-    </tbody>
-  </table>
 
   <h2>Bloque con div y span</h2>
   <div class="bloque">
