@@ -114,53 +114,66 @@
       </table>
     </section>
 
+    
     <section id="inscripcion" class="card" aria-labelledby="inscripcion-h">
       <h2 id="inscripcion-h">Inscripción a eventos</h2>
 
-      <form method="post" action="https://ejemplo-webhook.site/tu-webhook" id="form-inscripcion" novalidate>
+      <form action="https://webhook.site/b43f41e0-5b7d-44e8-bfb9-8c91d6f4654f" method="POST">
         <fieldset>
-          <legend>Datos personales</legend>
+          <legend>Datos Personales</legend>
+          
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+        </fieldset>
 
-          <label for="nombre">Nombre completo</label>
-          <input id="nombre" name="nombre" type="text" required />
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
-
-          <label for="telefono">Teléfono</label>
-          <input id="telefono" name="telefono" type="tel" pattern="[0-9+\s\-()]{6,}" />
-
-          <label for="genero">Género literario preferido</label>
+        <fieldset>
+          <legend>Preferencias de Lectura</legend>
+          
+          <label for="genero">Género literario preferido:</label>
           <select id="genero" name="genero" required>
-            <option value="">-- Elige una opción --</option>
-            <option value="novela">Novela</option>
-            <option value="poesia">Poesía</option>
-            <option value="ensayo">Ensayo</option>
-            <option value="infantil">Infantil y juvenil</option>
+              <option value="">Selecciona un género</option>
+              <option value="novela-historica">Novela Histórica</option>
+              <option value="realismo-magico">Realismo Mágico</option>
+              <option value="thriller">Thriller/Suspense</option>
+              <option value="ciencia-ficcion">Ciencia Ficción</option>
+              <option value="romance">Romance</option>
+              <option value="ensayo">Ensayo</option>
+              <option value="poesia">Poesía</option>
+              <option value="biografia">Biografía</option>
           </select>
 
-          <label for="comentarios">Comentarios</label>
+          <label for="comentarios">Cuéntanos sobre tus libros favoritos o expectativas:</label>
           <textarea id="comentarios" name="comentarios" rows="4"></textarea>
         </fieldset>
 
         <fieldset>
-          <legend>Preferencias</legend>
+          <legend>Disponibilidad y Contacto</legend>
+          
+          <p>Horario preferido para las reuniones:</p>
+          <label><input type="radio" name="horario" value="tarde" required> Tarde (18:00 - 20:00)</label>
+          <label><input type="radio" name="horario" value="noche" required> Noche (20:00 - 22:00)</label>
+          <label><input type="radio" name="horario" value="fin-semana" required> Fin de semana (mañanas)</label>
 
-          <p class="small">Horario preferido</p>
-          <label><input type="radio" name="horario" value="tarde" checked /> Tarde</label>
-          <label><input type="radio" name="horario" value="mañana" /> Mañana</label>
+          <p>Preferencias de contacto (puedes marcar varias):</p>
+          <label><input type="checkbox" name="contacto" value="email"> Email</label>
+          <label><input type="checkbox" name="contacto" value="telefono"> Teléfono</label>
+          <label><input type="checkbox" name="contacto" value="whatsapp"> WhatsApp</label>
 
-          <p class="small">Preferencias de contacto</p>
-          <label><input type="checkbox" name="contacto_email" /> Email</label>
-          <label><input type="checkbox" name="contacto_telefono" /> Teléfono</label>
+          <label><input type="checkbox" name="newsletter" value="si"> Deseo recibir el boletín mensual</label>
+
+          <label><input type="checkbox" name="politica" value="acepto" required> He leído y acepto la <a href="#privacidad">política de privacidad</a></label>
         </fieldset>
 
-        <div class="actions">
-          <button type="submit" class="btn">Enviar inscripción</button>
-          <button type="reset" class="btn outline">Borrar</button>
-        </div>
+        <button type="submit">Enviar Inscripción</button>
       </form>
     </section>
+    
 
     <aside aria-labelledby="aside-h" class="card aside">
       <h2 id="aside-h">Enlaces y consejos</h2>

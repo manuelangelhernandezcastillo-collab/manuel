@@ -26,7 +26,13 @@ header{
   color:#fff;
   padding:16px;
 }
-.header-inner{max-width:var(--maxw);margin:0 auto}
+
+.header-inner{
+  max-width:var(--maxw);
+  margin:0 auto;
+  text-align:left;   /* ← AÑADIDO */
+}
+
 h1{margin:0;font-size:1.6rem}
 .slogan{margin:6px 0 0;opacity:0.95}
 .nav-list{list-style:none;margin:10px 0 0;padding:0;display:flex;gap:10px;flex-wrap:wrap}
