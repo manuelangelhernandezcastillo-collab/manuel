@@ -1,0 +1,29 @@
+/* Tamaño del píxel: cambia el valor para escalar todo */
+:root { 
+  --p: 24px; 
+}
+
+/* Contenedor base: referencia para posicionamiento absoluto */
+.caja {
+  position: relative;
+  width: calc(var(--p) * 9);   /* 9 columnas */
+  height: calc(var(--p) * 7);  /* 7 filas */
+  border: 2px solid #ff0000;
+  background: #f3f4f6;         /* gris claro */
+  margin: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Un píxel cuadrado */
+.pixel {
+  position: absolute;
+  width: var(--p);
+  height: var(--p);
+  background: #e11d48;         /* rojo */
+  /* bordes suaves opcionales para estética */
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,0.08);
+}
+
+/* Paleta alternativa (ejemplo): agrega class .pink o .dark si quieres variar */
+.pixel.pink { background: #fb7185; }
+.pixel.dark { background: #9f1239; }
