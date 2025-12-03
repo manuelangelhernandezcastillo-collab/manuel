@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Club de Lectura Guanarteme</title>
+  <link rel="stylesheet" href="mipagina.css" />
+</head>
+<body id="top">
+  <header>
+    <div class="header-inner">
+      <h1>Club de Lectura Guanarteme</h1>
+      <p class="slogan">Lecturas que acercan al barrio</p>
+    </div>
+
+    <nav aria-label="Menú principal">
+      <ul class="nav-list">
+        <li><a href="#proxima">Próxima reunión</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#calendario">Calendario</a></li>
+        <li><a href="#inscripcion">Inscripción</a></li>
+        <li><a href="#privacidad">Privacidad</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="proxima" class="card" aria-labelledby="proxima-h">
+      <h2 id="proxima-h">Próxima reunión</h2>
+
+      <article class="evento">
+        <figure class="cover">
+          <img src="Livro.png" alt="Portada del libro La calle del sol, Ana Pérez" />
+          <figcaption><strong>La calle del sol</strong> — Ana Pérez (Colección Memoria del SUR)</figcaption>
+        </figure>
+
+        <div class="detalles">
+          <p class="meta"><strong>Fecha:</strong> 04/12/2025 &nbsp; <strong>Hora:</strong> 18:30 &nbsp; <strong>Lugar:</strong> Sede vecinal Guanarteme</p>
+
+          <h3>Agenda</h3>
+          <ol>
+            <li>Apertura y presentaciones</li>
+            <li>Debate sobre capítulos 1–6</li>
+            <li>Recomendaciones y votación de próximos libros</li>
+            <li>Cierre y sugerencias</li>
+          </ol>
+
+          <p class="sinopsis">Sinopsis: Una novela íntima sobre vecinos, secretos y cambios en un barrio costero.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="resenas" class="card" aria-labelledby="resenas-h">
+      <h2 id="resenas-h">Reseñas y recomendaciones</h2>
+
+      <article class="resena">
+        <h3>El mapa de las olas</h3>
+        <p class="autor">Luis Moreno</p>
+        <p>Reseña: Un relato cuidado que combina memoria y paisaje; ideal para lecturas en grupo por sus preguntas abiertas.</p>
+      </article>
+
+      <article class="resena">
+        <h3>Pequeñas certezas</h3>
+        <p class="autor">Clara Ruiz</p>
+        <p>Reseña: Poesía breve que abre conversaciones sobre emociones y comunidad; perfecta para sesiones temáticas.</p>
+      </article>
+
+      <article class="resena">
+        <h3>Historias desde el balcón</h3>
+        <p class="autor">Antología local</p>
+        <p>Reseña: Voces del barrio que fomentan debate sobre identidad y memoria colectiva.</p>
+      </article>
+    </section>
+
+    <section id="calendario" class="card" aria-labelledby="calendario-h">
+      <h2 id="calendario-h">Calendario de reuniones</h2>
+
+      <table>
+        <caption>Próximas reuniones quincenales</caption>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Libro del mes</th>
+            <th>Autor</th>
+            <th>Lugar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>04/12/2025</td>
+            <td>La calle del sol</td>
+            <td>Ana Pérez</td>
+            <td>Sede vecinal</td>
+          </tr>
+          <tr>
+            <td>18/12/2025</td>
+            <td>El mapa de las olas</td>
+            <td>Luis Moreno</td>
+            <td>Sede vecinal</td>
+          </tr>
+          <tr>
+            <td>01/01/2026</td>
+            <td>Pequeñas certezas</td>
+            <td>Clara Ruiz</td>
+            <td>Sede vecinal</td>
+          </tr>
+          <tr>
+            <td>15/01/2026</td>
+            <td>Historias desde el balcón</td>
+            <td>Varios</td>
+            <td>Sala anexa</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    
+    <section id="inscripcion" class="card" aria-labelledby="inscripcion-h">
+      <h2 id="inscripcion-h">Inscripción a eventos</h2>
+
+      <form action="https://webhook.site/b43f41e0-5b7d-44e8-bfb9-8c91d6f4654f" method="POST">
+        <fieldset>
+          <legend>Datos Personales</legend>
+          
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferencias de Lectura</legend>
+          
+          <label for="genero">Género literario preferido:</label>
+          <select id="genero" name="genero" required>
+              <option value="">Selecciona un género</option>
+              <option value="novela-historica">Novela Histórica</option>
+              <option value="realismo-magico">Realismo Mágico</option>
+              <option value="thriller">Thriller/Suspense</option>
+              <option value="ciencia-ficcion">Ciencia Ficción</option>
+              <option value="romance">Romance</option>
+              <option value="ensayo">Ensayo</option>
+              <option value="poesia">Poesía</option>
+              <option value="biografia">Biografía</option>
+          </select>
+
+          <label for="comentarios">Cuéntanos sobre tus libros favoritos o expectativas:</label>
+          <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Disponibilidad y Contacto</legend>
+          
+          <p>Horario preferido para las reuniones:</p>
+          <label><input type="radio" name="horario" value="tarde" required> Tarde (18:00 - 20:00)</label>
+          <label><input type="radio" name="horario" value="noche" required> Noche (20:00 - 22:00)</label>
+          <label><input type="radio" name="horario" value="fin-semana" required> Fin de semana (mañanas)</label>
+
+          <p>Preferencias de contacto (puedes marcar varias):</p>
+          <label><input type="checkbox" name="contacto" value="email"> Email</label>
+          <label><input type="checkbox" name="contacto" value="telefono"> Teléfono</label>
+          <label><input type="checkbox" name="contacto" value="whatsapp"> WhatsApp</label>
+
+          <label><input type="checkbox" name="newsletter" value="si"> Deseo recibir el boletín mensual</label>
+
+          <label><input type="checkbox" name="politica" value="acepto" required> He leído y acepto la <a href="#privacidad">política de privacidad</a></label>
+        </fieldset>
+
+        <button type="submit">Enviar Inscripción</button>
+      </form>
+    </section>
+    
+
+    <aside aria-labelledby="aside-h" class="card aside">
+      <h2 id="aside-h">Enlaces y consejos</h2>
+      <ul>
+        <li><a href="#normas">Normas del club</a></li>
+        <li><a href="#consejos">Consejos para participar</a></li>
+        <li><a href="#recordatorios">Recordatorios</a></li>
+      </ul>
+
+      <h3 id="normas">Normas</h3>
+      <ul>
+        <li>Respetar turnos de palabra</li>
+        <li>Poner móviles en silencio</li>
+        <li>Traer copia de la lectura si es posible</li>
+      </ul>
+
+      <h3 id="consejos">Consejos</h3>
+      <ul>
+        <li>Leer al menos los capítulos indicados</li>
+        <li>Apuntar dudas o citas para el debate</li>
+      </ul>
+    </aside>
+
+    <section id="privacidad" class="card" aria-labelledby="privacidad-h">
+      <h2 id="privacidad-h">Política de privacidad</h2>
+      <p>Los datos que facilites se usarán solo para gestionar inscripciones y comunicaciones del club. Conservación mientras exista relación activa. Puedes solicitar la rectificación o eliminación de tus datos enviando una petición al organizador y en caso de apocalipsis todo lo tuyo es del creador de esta pagina.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Club de Lectura Guanarteme</p>
+    <p><a href="#top">Volver arriba</a></p>
+    <p class="social">
+      <a href="https://facebook.com" aria-label="Facebook">Facebook</a> |
+      <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>
